@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Russian Roulette</title>
+</head>
+<body>
+    <main>
+        <div class="wrapper">
+            <div class="header">
+                <h1>Russian Roulette Simulator</h1>
+            </div>
+            <div class="game-container">
+                <div class="container-row">
+                    <div id="gun">
+                        <img src="static/images/gun.png" alt="Gun">
+                    </div>
+                    <div class="muzzle-flash">
+                        <img id="muzzle-flash" src="static/images/muzzle_flash.png" alt="Gun">
+                    </div>
+                </div>
+                <div class="container-row">
+                    <b id="status"></b>
+                </div>
+                <div class="container-row">
+                    <button class="button" id="insert-button">
+                        Insert Bullet
+                    </button>
+                    <button class="button" id="spin-button">
+                        Spin
+                    </button>
+                    <button class="button" id="trigger-button">
+                        Pull Trigger
+                    </button>
+                    <button class="button" id="reset-button">
+                        Reset
+                    </button>
+                </div>
+            </div>
+            <div class="player-container">
+                <div class="container-row">
+                    <div class="player-buttons">
+                        <div class="numbered-buttons-container"> 
+                            <button data-number="1" class="player-button">
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <circle cx="12" cy="12" r="9"></circle>
+                                    <text x="12" y="16" text-anchor="middle">
+                                        1
+                                    </text>
+                                </svg>
+                            </button>
+                        </div>
+                        <button class="add-player">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <circle cx="12" cy="12" r="9"></circle>
+                                <line x1="12" y1="8" x2="12" y2="16"></line>
+                                <line x1="8" y1="12" x2="16" y2="12"></line>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="container-row">
+                    <button class="button" id="remove-player-button">
+                        Remove Player
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2026 Russian Roulette Simulator. Made by <a href="https://github.com/Behrad01">Behrad01</a>.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
