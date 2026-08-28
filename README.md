@@ -41,3 +41,6 @@ Russian-Roulette-Simulator/
     └── images/
         ├── gun.png
         └── muzzle_flash.png
+
+```
+This project also supports mobile responsiveness.
