@@ -311,7 +311,7 @@ footer p {
     }
 
     .button {
-        width: calc(50% - 3px);
+        width: 50%;
         box-sizing: border-box;
         padding: 10px;
         font-size: 14px;
