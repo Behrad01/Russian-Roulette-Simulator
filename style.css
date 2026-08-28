@@ -311,10 +311,13 @@ footer p {
     }
 
     .button {
-        width: 50%;
         box-sizing: border-box;
         padding: 10px;
         font-size: 14px;
+    }
+
+    .game-container .container-row:last-child .button {
+        width: 47%;
     }
 
     .player-container {
