@@ -17,8 +17,8 @@ body {
 .wrapper {
     background: hsla(0, 0%, 87.5%, 0.5);
 
-    flex-basis: 550px;
-    width: 550px;
+    width: min(550px, calc(100vw - 30px));
+    flex-basis: auto;
     height: auto;
 
     border: 1px solid hsl(0, 0%, 80%);
@@ -126,6 +126,9 @@ body {
 
 #status {
     font-size: 20px;
+    
+    margin-top: 5px;
+    margin-bottom: 5px;
 
     text-align: center;
 }
@@ -247,4 +250,88 @@ footer p a {
 
 footer p {
     color: black;
+}
+
+@media (max-width: 600px) {
+    body {
+        min-height: 100vh;
+        height: auto;
+
+        padding: 20px 10px;
+
+        box-sizing: border-box;
+
+        font-size: 12px;
+    }
+
+    .wrapper {
+        width: 100%;
+    }
+
+    .header {
+        padding: 5px;
+    }
+
+    .header h1 {
+        font-size: 20px;
+    }
+
+    .game-container {
+        gap: 15px;
+        padding: 20px ;
+    }
+
+    .container-row {
+        flex-wrap: wrap;
+        gap: 5px;
+        padding: 0;
+    }
+
+    .container-row img {
+        width: 150px;
+
+        margin-top: 10px;
+    }
+
+    .muzzle-flash,
+    .muzzle-flash.show {
+        width: 150px;
+        margin-top: -45px;
+        margin-left: -15px;
+    }
+
+    #status {
+        font-size: 16px;
+        overflow-wrap: break-word;
+    }
+
+    .game-container .container-row:last-child {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .button {
+        width: calc(50% - 3px);
+        box-sizing: border-box;
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .player-container {
+        padding: 10px;
+    }
+
+    .player-buttons {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .numbered-buttons-container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #remove-player-button {
+        width: 100%;
+    }
 }
